@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Anonymous Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #chat-log {
+      padding: 20px;
+      border: 1px solid #ccc;
+      overflow-y: scroll;
+      height: 300px;
+    }
+    #user-id, #partner {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anonymous Chat</h1>
+  <div id="user-id">User ID: </div>
+  <div id="partner">Chat Partner: </div>
+  <div id="chat-log"></div>
+  <input id="message" type="text" placeholder="Type a message...">
+  <button id="send">Send</button>
+  <button id="next">Next</button>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/socket.js"></script>
+  <script src="/js/chat.js"></script>
+</body>
+</html>
